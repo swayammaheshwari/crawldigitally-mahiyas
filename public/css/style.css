@@ -1,0 +1,218 @@
+#navbar {
+  background: #ff8fab !important;
+}
+
+#navbar-elements {
+  margin-right: 100px !important;
+  color: #ffff !important;
+}
+
+#button {
+  padding: 10px 100px;
+  margin: 20px;
+  background-color: #ff8fab;
+}
+
+#div-map {
+  background-color: #ff8fab !important;
+}
+
+#testimonial-heading {
+  color: #ff8fab !important;
+}
+
+#contact-us {
+  background-color: #ffc2d1;
+}
+
+#svg-pin {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.about-us-h {
+  font-family: " Poppins" !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 30px !important;
+  line-height: 35px !important;
+}
+
+.about-us-p {
+  font-family: "Poppins" !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 23px !important;
+  line-height: 35px !important;
+}
+
+.about-us {
+  background-color: #f8f9fa;
+  padding: 60px 0;
+}
+
+.about-us h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.about-us p {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.about-us img {
+  margin-top: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#cards1 {
+  background-image: url(/img/Rectangle\ 7.png);
+  background-repeat: no-repeat;
+}
+
+#cards2 {
+  background-image: url(/img/Rectangle\ 8.png);
+  background-repeat: no-repeat;
+}
+
+#cards3 {
+  background-image: url(/img/Rectangle\ 9.png);
+  background-repeat: no-repeat;
+}
+
+.cards {
+  border: none;
+  box-shadow: -1px 3px 5px #a7a7a7;
+
+  margin-left: 20px;
+  margin-bottom: 0px !important;
+
+  align-items: center;
+  padding: 60px 80px 20px 80px;
+}
+.card-body {
+  margin: 0px;
+
+  background-color: #fff;
+  opacity: 0.9;
+}
+.jost {
+  font-family: "Jost", sans-serif !important;
+}
+
+.poppins {
+  font-family: "poppins", sans-serif !important;
+}
+
+/* testimonial*/
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.tag {
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.fa-heart {
+  color: rgba(255, 230, 0, 0.959);
+  font-size: 30px;
+}
+
+.card {
+  height: 320px;
+  padding: 10px 20px;
+  border: none;
+  box-shadow: -1px 3px 5px #a7a7a7;
+}
+
+.testimonial {
+  font-size: 0.9rem;
+  line-height: 1.4rem;
+  font-weight: 500;
+}
+
+.active-star {
+  color: #fbc02d;
+  margin-bottom: 8px;
+}
+
+.active-star:hover {
+  color: #f9a825;
+  cursor: pointer;
+}
+
+.profile {
+  padding-top: 10px;
+}
+
+.name {
+  font-weight: 700;
+}
+
+.designation {
+  font-size: 0.84rem;
+  font-weight: 600;
+}
+
+.owl-carousel {
+  margin-bottom: 15px;
+}
+
+.owl-carousel .owl-stage-outer {
+  padding: 40px 10px;
+  height: 380px;
+}
+
+.owl-carousel .owl-item img {
+  width: 45px !important;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.owl-theme .owl-nav [class*="owl-"] {
+  border-radius: 50% !important;
+  background: inherit !important;
+  border: 3px solid #bbb;
+  color: #bbb !important;
+}
+
+.owl-theme .owl-nav [class*="owl-"]:hover {
+  border: 3px solid #1010ca;
+  color: #1010ca !important;
+}
+
+@media (max-width: 575.5px) {
+  .container {
+    margin: 0px;
+    padding: 20px;
+  }
+}

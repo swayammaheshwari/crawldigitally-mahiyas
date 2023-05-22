@@ -1,0 +1,9 @@
+.heading {
+  text-align: center;
+}
+.hr {
+  height: 2px;
+  width: 10px;
+  color: gray;
+  background-color: gray;
+}
