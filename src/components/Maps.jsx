@@ -1,11 +1,21 @@
 import React from "react";
+import { ImLocation2 } from "react-icons/im";
 
 function Maps() {
   return (
     <div className="container">
-      <h2 className="text-center mb-5">Reach Us At</h2>
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        <ImLocation2 style={{ fontSize: "48px", color: "#CE136C" }} />
+      </div>
+      <h2 className="text-center mb-5">REACH US</h2>
       <div className="row px-3">
-        <div className="col-md-6 ">
+        <div className="col-md-6 mb-4">
           <div className="card">
             <div className="card-body p-0">
               <iframe

@@ -8,7 +8,11 @@ import Testimonial from "./components/testimonial";
 import Maps from "./components/Maps";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import Courses2 from "./Test/Courses2";
+import Services2 from "./Test/Services2";
+import Nav2 from "./Test/Nav2";
+import Grid from "./components/Grid";
+import Content from "./components/Content";
+import Content2 from "./components/Content2";
 
 const App = () => {
   return (
@@ -29,8 +33,11 @@ const App = () => {
 const Test = () => {
   return (
     <>
-      <Courses2 />
-      <h2>dfgdf</h2>
+      <Navbar />
+      <Grid />
+      <Content2 />
+      {/* <Content /> */}
+      <Footer />
     </>
   );
 };

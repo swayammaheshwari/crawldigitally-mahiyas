@@ -1,13 +1,24 @@
 import React from "react";
+import "../styles/Navbar.css";
 
 const Navbar = () => {
   return (
     <>
-      <nav id="navbar" class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <img src="img/nail 1.png" alt="" />
+      <div
+        style={{
+          display: "grid",
+          placeItems: "center",
+          width: "100%",
+          height: "100%",
+        }}
+      >
+        <img src="img/logo_main.png" alt="" />
+      </div>
+      <nav id="navbar" className="navbar navbar-expand-lg bg-dark">
+        <div className="container">
           <button
-            class="navbar-toggler"
+            style={{ backgroundColor: "black", opacity: "0.4" }}
+            className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
@@ -15,14 +26,14 @@ const Navbar = () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul
-              className="navbar-nav ms-auto mb-2 mb-lg-0"
+              className="navbar-nav ms-auto mb-2 mb-lg-0 justify-content-center"
               style={{ margin: "0", padding: "0" }}
             >
-              <li className="nav-item" style={{ marginRight: "0px" }}>
+              <li className="nav-item">
                 <a
                   className="nav-link active"
                   id="navbar-elements"
@@ -32,7 +43,7 @@ const Navbar = () => {
                   HOME
                 </a>
               </li>
-              <li className="nav-item" style={{ marginRight: "0px" }}>
+              <li className="nav-item">
                 <a
                   className="nav-link active"
                   id="navbar-elements"
@@ -42,7 +53,7 @@ const Navbar = () => {
                   SERVICES
                 </a>
               </li>
-              <li className="nav-item" style={{ marginRight: "0px" }}>
+              <li className="nav-item">
                 <a
                   className="nav-link active"
                   id="navbar-elements"
@@ -52,7 +63,7 @@ const Navbar = () => {
                   ABOUT US
                 </a>
               </li>
-              <li className="nav-item" style={{ marginRight: "0px" }}>
+              <li className="nav-item">
                 <a
                   className="nav-link active"
                   id="navbar-elements"
@@ -62,7 +73,7 @@ const Navbar = () => {
                   CONTACT US
                 </a>
               </li>
-              <li className="nav-item" style={{ marginRight: "0px" }}>
+              <li className="nav-item">
                 <a
                   className="nav-link active"
                   id="navbar-elements"

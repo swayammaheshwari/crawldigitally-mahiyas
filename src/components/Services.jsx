@@ -1,65 +1,94 @@
 import React from "react";
-import "../styles/Services.css";
+import Card from "react-bootstrap/Card";
+import "../styles/Courses.css";
 
-const Services = () => {
+const Services2 = () => {
   return (
     <>
-      <section class="card-section">
-        <h1 class="text-center font-weight-bold mt-5 mb-3 jost">
-          OUR POPULAR SERVICES
-        </h1>
-        <div class="container">
-          <div class="row">
-            <div class="col-md-4 mt-4 mb-4 ">
-              <div class="cards" id="cards1">
-                <div class="card-body">
-                  <h5 class="card-title">Nail Treatment</h5>
-                  <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
-                  </p>
-                  <a href="">
-                    <h6 class="heading">Read More</h6>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 mt-4 mb-4">
-              <div class="cards" id="cards2">
-                <div class="card-body">
-                  <h5 class="card-title color">Skin Treatment</h5>
-                  <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
-                  </p>
-                  <a href="">
-                    <h6 class="heading">Read More</h6>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 mt-4 mb-4">
-              <div class="cards " id="cards3">
-                <div class="card-body">
-                  <h5 class="card-title color">Facial Treatment</h5>
-                  <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
-                  </p>
-                  <a href="">
-                    <h6 class="heading">Read More</h6>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
+      <div style={{ position: "relative", marginTop: "10px" }}>
+        <center>
+          <img src="/img/Group 43.png" className="service-img" alt="" />
+        </center>
+        <div class="d-flex flex-wrap justify-content-center">
+          <Card
+            style={{
+              width: "18rem",
+              height: "25rem",
+              padding: "1px",
+              margin: "40px",
+            }}
+            className="border-danger"
+          >
+            <a href="https://example.com">
+              <Card.Img
+                src="/img/service 1.jpg"
+                style={{
+                  cursor: "pointer",
+                  objectFit: "cover",
+                  height: "100%",
+                }}
+              />
+            </a>
+          </Card>
+          <Card
+            style={{
+              width: "18rem",
+              height: "25rem",
+              padding: "1px",
+              margin: "40px",
+            }}
+            className="border-danger"
+          >
+            <a href="https://example.com">
+              <Card.Img
+                src="/img/service 2.jpg"
+                style={{
+                  cursor: "pointer",
+                  objectFit: "cover",
+                  height: "100%",
+                }}
+              />
+            </a>
+          </Card>
+          <Card
+            style={{
+              width: "18rem",
+              height: "25rem",
+              padding: "1px",
+              margin: "40px",
+            }}
+            className="border-danger"
+          >
+            <a href="https://example.com">
+              <Card.Img
+                src="/img/service 3.jpg"
+                style={{
+                  cursor: "pointer",
+                  objectFit: "cover",
+                  height: "100%",
+                }}
+              />
+            </a>
+          </Card>
+          <hr
+            className="hr-line"
+            style={{
+              opacity: 100,
+              height: "300px",
+              backgroundColor: "rgba(255, 194, 209, 1)",
+              border: "none",
+              width: "100%",
+              textAlign: "left",
+              marginLeft: 0,
+              zIndex: -1,
+              position: "absolute",
+              top: "-25px",
+            }}
+          />
         </div>
-      </section>
+      </div>
     </>
   );
 };
 
-export default Services;
+export default Services2;

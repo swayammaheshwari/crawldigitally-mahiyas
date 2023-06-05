@@ -1,1 +1,8 @@
+#navbar {
+  background: #ff8fab !important;
+}
 
+#navbar-elements {
+  margin-right: 100px !important;
+  color: #ffff !important;
+}

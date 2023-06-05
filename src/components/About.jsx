@@ -16,7 +16,7 @@ const About = () => {
           </div>
           <div class="col-md-6">
             <h2 class="about-us-h mt-4 jost">ABOUT US</h2>
-            <p class="about-us-p poppins">
+            <p class="about-us-p poppins" style={{ textAlign: "justify" }}>
               Meet Pinky Hedau, the founder of The Nail Bar and Mahiyas Nail
               Academy! With over a decade of experience in the nail art
               industry, Pinky's passion for nail art has driven her to teach

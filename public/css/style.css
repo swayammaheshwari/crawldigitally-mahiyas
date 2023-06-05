@@ -1,12 +1,3 @@
-#navbar {
-  background: #ff8fab !important;
-}
-
-#navbar-elements {
-  margin-right: 100px !important;
-  color: #ffff !important;
-}
-
 #button {
   padding: 10px 100px;
   margin: 20px;
@@ -18,7 +9,8 @@
 }
 
 #testimonial-heading {
-  color: #ff8fab !important;
+  color: #000000 !important;
+  font-weight: bold;
 }
 
 #contact-us {

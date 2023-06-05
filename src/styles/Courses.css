@@ -1,9 +1,23 @@
 .heading {
   text-align: center;
 }
-.hr {
-  height: 2px;
-  width: 10px;
-  color: gray;
-  background-color: gray;
+
+.hr-line {
+  display: block;
+}
+
+.course-content {
+  display: grid;
+  place-items: center;
+  color: aliceblue;
+}
+
+@media (max-width: 768px) {
+  .hr-line {
+    display: none;
+  }
+
+  .service-img {
+    height: 85px;
+  }
 }

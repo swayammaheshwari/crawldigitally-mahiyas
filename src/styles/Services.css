@@ -12,3 +12,9 @@
 .service-card {
   margin-bottom: 30px;
 }
+
+a {
+  padding: 0 !important;
+  margin-bottom: 100rem !important;
+  color: black;
+}
