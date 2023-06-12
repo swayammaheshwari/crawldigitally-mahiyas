@@ -1,0 +1,33 @@
+/* Mobile View */
+@media only screen and (max-width: 767px) {
+  .map-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .map-container h3 {
+    font-size: 1rem;
+    padding: 5px 0;
+  }
+
+  .map-col {
+    max-width: 80%;
+    max-height: 70%;
+    margin: 20px auto;
+  }
+}
+
+/* Tablet View */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+}
+
+/* Desktop View */
+@media only screen and (min-width: 1024px) {
+  .map-container {
+    padding: 0 50px;
+  }
+  .map-col {
+    margin: 0 0 20px 0;
+    padding: 0 50px;
+  }
+}

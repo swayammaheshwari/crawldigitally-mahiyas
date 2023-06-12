@@ -1,0 +1,16 @@
+.custom-carousel {
+  /* Default height for larger screens */
+  /* height: 500px; */
+}
+
+@media (max-width: 767px) {
+  /* Adjusted height for mobile screens */
+  .custom-carousel {
+    height: 300px;
+  }
+
+  .custom-img {
+    height: 300px;
+    object-fit: cover;
+  }
+}

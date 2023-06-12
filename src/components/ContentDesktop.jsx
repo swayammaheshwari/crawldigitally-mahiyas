@@ -1,12 +1,12 @@
 import React from "react";
-import "../styles/Content.css";
+// import "../styles/Content.css";
 
 const styles = {
-  container: {
-    display: "flex",
-    justifyContent: "space-between",
-    marginTop: "5rem",
-  },
+  // container: {
+  //   display: "flex",
+  //   justifyContent: "space-between",
+  //   marginTop: "5rem",
+  // },
   section: {
     width: "30%",
   },
@@ -26,7 +26,7 @@ const styles = {
   },
 };
 
-const Content2 = () => {
+const ContentDesktop = () => {
   return (
     <>
       <div className="container mt-5">
@@ -166,4 +166,4 @@ const Content2 = () => {
   );
 };
 
-export default Content2;
+export default ContentDesktop;

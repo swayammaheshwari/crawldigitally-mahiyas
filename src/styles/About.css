@@ -1,4 +1,70 @@
-#image {
-  height: 500px;
-  margin-top: 0;
+.about-us {
+  background-color: #fff3f3;
+}
+
+/* Mobile View */
+@media only screen and (max-width: 767px) {
+  #image {
+    height: 300px;
+    margin-top: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  #mobile-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about-us p {
+    font-style: normal !important;
+    font-weight: 300 !important;
+    font-size: 15px !important;
+    line-height: 25px !important;
+    margin: 10px;
+    color: black;
+    text-align: justify;
+  }
+  .about-us h2 {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 25px !important;
+  }
+}
+
+/* Tablet View */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+}
+
+/* Desktop View */
+@media only screen and (min-width: 1024px) {
+  .about-us {
+    padding: 60px 0;
+  }
+  .about-us p {
+    font-size: 24px;
+    font-weight: 300 !important;
+    line-height: 41px;
+    text-align: left;
+  }
+
+  #image {
+    height: 600px;
+    margin-top: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .about-us h2 {
+    /* font-weight: bold;
+    font-family: "Jost", sans-serif;
+    font-size: 36px;
+    margin-bottom: 30px;
+    margin-top: 20px; */
+    font-family: Jost;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 57px;
+    letter-spacing: 4.5px;
+    text-align: left;
+  }
 }

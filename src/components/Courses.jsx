@@ -8,6 +8,7 @@ const Courses = () => {
     <>
       <div
         style={{
+          position: "relative",
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
@@ -22,24 +23,31 @@ const Courses = () => {
           }}
         />
       </div>
-      <h2 className="heading">OUR COURSES</h2>
+      <h2
+        style={{ color: "black", fontFamily: "Jost", fontWeight: "bold" }}
+        className="text-center"
+      >
+        OUR COURSES
+      </h2>
       <div class="d-flex flex-wrap justify-content-center">
         <Card
           style={{
+            border: "none",
             width: "18rem",
             height: "25rem",
-            padding: "1px",
+            padding: "0",
             margin: "40px",
           }}
-          className="border-danger"
         >
           <a href="https://example.com">
             <Card.Img
               src="/img/Rectangle 7.png"
               style={{
+                margin: "0",
+                padding: "0",
                 cursor: "pointer",
                 objectFit: "cover",
-                height: "109%",
+                height: "110%",
                 position: "relative",
               }}
             />
@@ -56,20 +64,23 @@ const Courses = () => {
         </Card>
         <Card
           style={{
+            border: "none",
+
             width: "18rem",
             height: "25rem",
-            padding: "1px",
+            padding: "0",
             margin: "40px",
           }}
-          className="border-danger"
         >
           <a href="https://example.com">
             <Card.Img
               src="/img/Rectangle 8.png"
               style={{
+                margin: "0",
+                padding: "0",
                 cursor: "pointer",
                 objectFit: "cover",
-                height: "109%",
+                height: "110%",
                 position: "relative",
               }}
             />
@@ -78,7 +89,7 @@ const Courses = () => {
               style={{ position: "absolute", top: "250px", left: "60px" }}
             >
               <img src="/img/Group 70.png" alt="" />
-              <h3 style={{ fontWeight: "bold" }}>Professional</h3>
+              <h3 style={{ fontWeight: "bold" }}>Advance</h3>
               <h6>Duration 15 Days</h6>
               <h6>READ MORE</h6>
             </div>
@@ -86,20 +97,23 @@ const Courses = () => {
         </Card>
         <Card
           style={{
+            border: "none",
+
             width: "18rem",
             height: "25rem",
-            padding: "1px",
+            padding: "0",
             margin: "40px",
           }}
-          className="border-danger"
         >
           <a href="https://example.com">
             <Card.Img
               src="/img/Rectangle 9.png"
               style={{
+                margin: "0",
+                padding: "0",
                 cursor: "pointer",
                 objectFit: "cover",
-                height: "109%",
+                height: "110%",
                 position: "relative",
               }}
             />
@@ -108,12 +122,25 @@ const Courses = () => {
               style={{ position: "absolute", top: "250px", left: "60px" }}
             >
               <img src="/img/Group 71.png" alt="" />
-              <h3 style={{ fontWeight: "bold" }}>Professional</h3>
+              <h3 style={{ fontWeight: "bold" }}>International</h3>
               <h6>Duration 20 Days</h6>
               <h6>READ MORE</h6>
             </div>
           </a>
         </Card>
+        <hr
+          className="hr-line"
+          style={{
+            opacity: 100,
+            marginTop: "230px",
+            height: "13px",
+            backgroundColor: "#CE136C",
+            border: "none",
+            width: "100%",
+            zIndex: -1,
+            position: "absolute",
+          }}
+        />
       </div>
     </>
   );

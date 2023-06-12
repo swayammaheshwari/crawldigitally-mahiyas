@@ -1,3 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300&family=Poppins&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  /* background-color: #fff3f3; */
+}
+
+.jost {
+  font-family: "Jost", sans-serif !important;
+}
+
 #button {
   padding: 10px 100px;
   margin: 20px;
@@ -20,43 +31,6 @@
 #svg-pin {
   margin: 0 !important;
   padding: 0 !important;
-}
-
-.about-us-h {
-  font-family: " Poppins" !important;
-  font-style: normal !important;
-  font-weight: 500 !important;
-  font-size: 30px !important;
-  line-height: 35px !important;
-}
-
-.about-us-p {
-  font-family: "Poppins" !important;
-  font-style: normal !important;
-  font-weight: 500 !important;
-  font-size: 23px !important;
-  line-height: 35px !important;
-}
-
-.about-us {
-  background-color: #f8f9fa;
-  padding: 60px 0;
-}
-
-.about-us h2 {
-  font-size: 36px;
-  margin-bottom: 30px;
-}
-
-.about-us p {
-  font-size: 20px;
-  line-height: 1.5;
-  margin-bottom: 30px;
-}
-
-.about-us img {
-  margin-top: 30px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 #cards1 {
@@ -90,13 +64,6 @@
   background-color: #fff;
   opacity: 0.9;
 }
-.jost {
-  font-family: "Jost", sans-serif !important;
-}
-
-.poppins {
-  font-family: "poppins", sans-serif !important;
-}
 
 /* testimonial*/
 
@@ -117,15 +84,6 @@
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
-}
-
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
 }
 
 .tag {

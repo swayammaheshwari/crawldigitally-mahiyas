@@ -20,4 +20,22 @@
   .service-img {
     height: 85px;
   }
+
+  .course-content {
+    position: absolute;
+    top: 250px;
+    left: 0px;
+  }
+
+  .course-content img {
+    height: 50px;
+  }
+
+  .course-content h3 {
+    font-size: large;
+  }
+
+  .course-content h6 {
+    font-size: large;
+  }
 }

@@ -1,5 +1,4 @@
 import React from "react";
-import Navbar from "./components/Navbar";
 import Carousal from "./components/Carousal";
 import About from "./components/about";
 import Services from "./components/services";
@@ -8,16 +7,16 @@ import Testimonial from "./components/testimonial";
 import Maps from "./components/Maps";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import Services2 from "./Test/Services2";
-import Nav2 from "./Test/Nav2";
 import Grid from "./components/Grid";
-import Content from "./components/Content";
-import Content2 from "./components/Content2";
+import ResponsiveGrid from "./components/ResponsiveGrid";
+import ContentMobile from "./components/ContentMobile";
+import ContentDesktop from "./components/ContentDesktop";
+import NavbarApp from "./components/NavbarApp";
 
 const App = () => {
   return (
     <>
-      <Navbar />
+      <NavbarApp />
       <Carousal />
       <About />
       <Services />
@@ -30,16 +29,15 @@ const App = () => {
   );
 };
 
-const Test = () => {
+const ServicesApp = () => {
   return (
     <>
-      <Navbar />
+      <NavbarApp />
       <Grid />
-      <Content2 />
-      {/* <Content /> */}
+      <ResponsiveGrid mobile={<ContentMobile />} desktop={<ContentDesktop />} />
       <Footer />
     </>
   );
 };
 
-export { App, Test };
+export { App, ServicesApp };

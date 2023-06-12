@@ -1,13 +1,5 @@
 /* Mobile View */
 @media only screen and (max-width: 767px) {
-  .navbar {
-    padding: 0;
-    margin: 0;
-  }
-
-  img {
-    height: 100px;
-  }
 }
 
 /* Tablet View */
@@ -16,4 +8,11 @@
 
 /* Desktop View */
 @media only screen and (min-width: 1024px) {
+  .custom-input {
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%; */
+    padding: 0 25%;
+  }
 }
