@@ -8,44 +8,57 @@ const styles = {
     marginTop: "5rem",
   },
   heading: {
+    margin: "15px 0",
+    fontSize: "20px",
+    fontWeight: "bold",
+    fontFamily: "Poppins",
+  },
+  topHeading: {
+    margin: "20px 0",
     fontSize: "24px",
     fontWeight: "bold",
+    fontFamily: "Poppins",
   },
   hr: {
     width: "100%",
     margin: "1rem 0",
     border: "none",
     borderBottom: "1px solid #333",
+    fontFamily: "Poppins",
   },
   imageContainer: {
     display: "flex",
     justifyContent: "center",
-    marginBottom: "10px",
+    margin: "30px 0 0 0",
   },
   listItem: {
-    marginBottom: "0.5rem",
+    marginLeft: "30px",
+    fontFamily: "Poppins",
+  },
+  subListItem: {
+    marginTop: "-8px",
+    fontFamily: "Jost",
+    fontSize: "14px",
   },
 };
 
 const ContentMobile = () => {
   return (
     <>
-      {/* <center> */}
       <div className="container mt-5">
         <div className="nail" style={styles.section}>
           <div className="heading">
-            <h2 style={styles.heading}>NAIL SERVICES</h2>
-            <hr style={styles.hr} />
+            <h2 style={styles.topHeading}>NAIL SERVICES</h2>
           </div>
           <div className="content">
             <div style={styles.imageContainer}>
               <img
-                src="/img/Rectangle 42.png"
+                src="/img/Services/nail extension.webp"
                 alt=""
-                style={{ borderRadius: "12px", height: "200px" }}
+                style={{ borderRadius: "12px", height: "170px" }}
               />
             </div>
-            <h4>NAIL EXTENSION</h4>
+            <h4 style={styles.heading}>NAIL EXTENSION</h4>
             <ul style={styles.list}>
               <li style={styles.listItem}>Temporary Extension</li>
               <li style={styles.listItem}>Semi Permanent Gel Extension</li>
@@ -56,12 +69,15 @@ const ContentMobile = () => {
             </ul>
             <div style={styles.imageContainer}>
               <img
-                src="/img/Rectangle 42.png"
+                src="/img/Services/nail art.webp"
                 alt=""
-                style={{ borderRadius: "12px", height: "200px" }}
+                style={{
+                  borderRadius: "22px",
+                  height: "170px",
+                }}
               />
             </div>
-            <h4>NAIL ART</h4>
+            <h4 style={styles.heading}>NAIL ART</h4>
             <ul style={styles.list}>
               <li style={styles.listItem}>Glitter, Myler Art</li>
               <li style={styles.listItem}>Chrome Art</li>
@@ -74,12 +90,12 @@ const ContentMobile = () => {
             </ul>
             <div style={styles.imageContainer}>
               <img
-                src="/img/Rectangle 42.png"
+                src="/img/Services/nail polish.jpg"
                 alt=""
-                style={{ borderRadius: "12px", height: "200px" }}
+                style={{ borderRadius: "12px", height: "170px" }}
               />
             </div>
-            <h4>NAIL POLISH & NAIL CARE</h4>
+            <h4 style={styles.heading}>NAIL POLISH & NAIL CARE</h4>
             <ul style={styles.list}>
               <li style={styles.listItem}>Temporary Polish</li>
               <li style={styles.listItem}>Glam Brand Polish</li>
@@ -93,101 +109,151 @@ const ContentMobile = () => {
         </div>
         <div className="skin" style={styles.section}>
           <div className="heading">
-            <h2 style={styles.heading}>SKIN</h2>
             <hr style={styles.hr} />
+            <h2 style={styles.topHeading}>SKIN</h2>
           </div>
 
           <div className="content">
             <div style={styles.imageContainer}>
               <img
-                src="/img/Rectangle 42.png"
+                src="/img/Services/treatment mask.webp"
                 alt=""
-                style={{ borderRadius: "12px", height: "200px" }}
+                style={{ borderRadius: "12px", height: "170px" }}
               />
             </div>
-            <h4>TREATMENT MASK</h4>
+            <h4 style={styles.heading}>TREATMENT MASK</h4>
             <ul style={styles.list}>
               <li style={styles.listItem}>
-                Thermo Herb (wrinkles, Open Pores, Loose Skin)
+                <h6>Thermo Herb</h6>
+                <h6 style={styles.subListItem}>
+                  (wrinkles, Open Pores, Loose Skin)
+                </h6>
               </li>
               <li style={styles.listItem}>
-                Wax Therapy (Wrinkles, Lifting. Ageing Skin, Dry skin)
+                <h6>Wax Therapy</h6>
+                <h6 style={styles.subListItem}>
+                  (Wrinkles, Lifting. Ageing Skin, Dry skin)
+                </h6>
               </li>
               <li style={styles.listItem}>
-                Botox Mask (Pimple, Pigmentation, Open Pores)
+                <h6>Botox Mask</h6>
+                <h6 style={styles.subListItem}>
+                  (Pimple, Pigmentation, Open Pores)
+                </h6>
               </li>
               <li style={styles.listItem}>
-                Luxury Treatment (According To Skin Type)
+                <h6>Luxury Treatment</h6>
+                <h6 style={styles.subListItem}>(According To Skin Type)</h6>
               </li>
               <li style={styles.listItem}>
-                Light Therapy Mask (According To Skin Type)
+                <h6>Light Therapy Mask</h6>
+                <h6 style={styles.subListItem}>(According To Skin Type)</h6>
               </li>
             </ul>
+
             <div style={styles.imageContainer}>
               <img
-                src="/img/Rectangle 42.png"
+                src="/img/Services/treatment facial.webp"
                 alt=""
-                style={{ borderRadius: "12px", height: "200px" }}
+                style={{ borderRadius: "12px", height: "170px" }}
               />
             </div>
-            <h4>TREATMENT FACIAL</h4>
-            <ul style={styles.list}>
-              <li style={styles.listItem}>Cheryl's Glovite</li>
-              <li style={styles.listItem}>Insta Glow</li>
-              <li style={styles.listItem}>Tan Facial</li>
-              <li style={styles.listItem}>Thermo - Herb Open Pores Facial</li>
-              <li style={styles.listItem}>Bridal 03+ Facial</li>
-              <li style={styles.listItem}>Gold Anti Aging Facial</li>
-              <li style={styles.listItem}>
-                Four Layer Facial Open Pores Treatment Facial
-              </li>
-              <li style={styles.listItem}>Gold Bridal Facial</li>
-              <li style={styles.listItem}>
-                Clari Glow (For Pimple & Oily Skin)
-              </li>
-              <li style={styles.listItem}>Oxy Blast (Aging, Dry Skin)</li>
-              <li style={styles.listItem}>
-                Galvanic Treatment Facial (Pigmentation, Pimple, Wrinkles)
-              </li>
-              <li style={styles.listItem}>
-                Diamond Skin Tightening Facial (Anti Aging, Wrinkles)
-              </li>
-              <li style={styles.listItem}>
-                Diamond Bridal Facial (For Pimple & Oily Skin)
-              </li>
-              <li style={styles.listItem}>Oxy Blast (Aging, Dry Skin)</li>
-            </ul>
-            <div style={styles.imageContainer}>
-              <img
-                src="/img/Rectangle 42.png"
-                alt=""
-                style={{ borderRadius: "12px", height: "200px" }}
-              />
-            </div>
-            <h4>LUXURY FACIAL</h4>
+            <h4 style={styles.heading}>TREATMENT FACIAL</h4>
             <ul style={styles.list}>
               <li style={styles.listItem}>
-                24 Carat Gold Facial (Skin D-tan, Lightning, Brightening,
-                Lifting)
+                <h6>Cheryl's Glovite</h6>
               </li>
               <li style={styles.listItem}>
-                Diamond Luxury Facial (Lightning, Brightening)
+                <h6>Insta Glow</h6>
               </li>
               <li style={styles.listItem}>
-                Birdal 03+ Power Boost Facial (Pimple, Pigmentation, Open Pores)
+                <h6>Tan Facial</h6>
               </li>
               <li style={styles.listItem}>
-                Red Carpet Facial Light Therapy (According To Skin Type)
+                <h6>Thermo - Herb Open Pores Facial</h6>
+                <h6 style={styles.subListItem}>
+                  (wrinkles, Open Pores, Loose Skin)
+                </h6>
+              </li>
+              <li style={styles.listItem}>
+                <h6>Bridal 03+ Facial</h6>
+              </li>
+              <li style={styles.listItem}>
+                <h6>Gold Anti Aging Facial</h6>
+              </li>
+              <li style={styles.listItem}>
+                <h6>Four Layer Facial Open Pores Treatment Facial</h6>
+              </li>
+              <li style={styles.listItem}>
+                <h6>Gold Bridal Facial</h6>
+              </li>
+              <li style={styles.listItem}>
+                <h6>Clari Glow</h6>
+                <h6 style={styles.subListItem}>(For Pimple & Oily Skin)</h6>
+              </li>
+              <li style={styles.listItem}>
+                <h6>Oxy Blast</h6>
+                <h6 style={styles.subListItem}>(Aging, Dry Skin)</h6>
+              </li>
+              <li style={styles.listItem}>
+                <h6>Galvanic Treatment Facial</h6>
+                <h6 style={styles.subListItem}>
+                  (Pigmentation, Pimple, Wrinkles)
+                </h6>
+              </li>
+              <li style={styles.listItem}>
+                <h6>Diamond Skin Tightening Facial</h6>
+                <h6 style={styles.subListItem}>(Anti Aging, Wrinkles)</h6>
+              </li>
+              <li style={styles.listItem}>
+                <h6>Diamond Bridal Facial</h6>
+                <h6 style={styles.subListItem}>(For Pimple & Oily Skin)</h6>
+              </li>
+              <li style={styles.listItem}>
+                <h6>Oxy Blast</h6>
+                <h6 style={styles.subListItem}>(Aging, Dry Skin)</h6>
               </li>
             </ul>
+
             <div style={styles.imageContainer}>
               <img
-                src="/img/Rectangle 42.png"
+                src="/img/Services/luxury facial.jpg"
                 alt=""
-                style={{ borderRadius: "12px", height: "200px" }}
+                style={{ borderRadius: "12px", height: "160px" }}
               />
             </div>
-            <h4>THREADING</h4>
+            <h4 style={styles.heading}>LUXURY FACIAL</h4>
+            <ul style={styles.list}>
+              <li style={styles.listItem}>
+                <h6>24 Carat Gold Facial</h6>
+                <h6 style={styles.subListItem}>
+                  (Skin D-tan, Lightning, Brightening, Lifting)
+                </h6>
+              </li>
+              <li style={styles.listItem}>
+                <h6>Diamond Luxury Facial</h6>
+                <h6 style={styles.subListItem}>(Lightning, Brightening)</h6>
+              </li>
+              <li style={styles.listItem}>
+                <h6>Birdal 03+ Power Boost Facial</h6>
+                <h6 style={styles.subListItem}>
+                  (Pimple, Pigmentation, Open Pores)
+                </h6>
+              </li>
+              <li style={styles.listItem}>
+                <h6>Red Carpet Facial Light Therapy</h6>
+                <h6 style={styles.subListItem}>(According To Skin Type)</h6>
+              </li>
+            </ul>
+
+            <div style={styles.imageContainer}>
+              <img
+                src="/img/Services/threading.jpg"
+                alt=""
+                style={{ borderRadius: "12px", height: "167px" }}
+              />
+            </div>
+            <h4 style={styles.heading}>THREADING</h4>
             <ul style={styles.list}>
               <li style={styles.listItem}>Threading</li>
               <li style={styles.listItem}>Forehead</li>
@@ -198,12 +264,12 @@ const ContentMobile = () => {
             </ul>
             <div style={styles.imageContainer}>
               <img
-                src="/img/Rectangle 42.png"
+                src="/img/Services/wax.webp"
                 alt=""
-                style={{ borderRadius: "12px", height: "200px" }}
+                style={{ borderRadius: "12px", height: "170px" }}
               />
             </div>
-            <h4>WAX</h4>
+            <h4 style={styles.heading}>WAX</h4>
             <ul style={styles.list}>
               <li style={styles.listItem}>Tummy & Back</li>
               <li style={styles.listItem}>Face Wax</li>
@@ -216,12 +282,12 @@ const ContentMobile = () => {
             </ul>
             <div style={styles.imageContainer}>
               <img
-                src="/img/Rectangle 42.png"
+                src="/img/Services/organic wax.webp"
                 alt=""
-                style={{ borderRadius: "12px", height: "200px" }}
+                style={{ borderRadius: "12px", height: "170px" }}
               />
             </div>
-            <h4>ORGANIC WAX</h4>
+            <h4 style={styles.heading}>ORGANIC WAX</h4>
             <ul style={styles.list}>
               <li style={styles.listItem}>Face Wax</li>
               <li style={styles.listItem}>Hand</li>
@@ -235,19 +301,19 @@ const ContentMobile = () => {
         </div>
         <div className="hair" style={styles.section}>
           <div className="heading">
-            <h2 style={styles.heading}>HAIR</h2>
             <hr style={styles.hr} />
+            <h2 style={styles.topHeading}>HAIR</h2>
           </div>
           <div className="content">
             <div style={styles.imageContainer}>
               <img
-                src="/img/Rectangle 42.png"
+                src="/img/Services/hair color.jpg"
                 alt=""
-                style={{ borderRadius: "12px", height: "200px" }}
+                style={{ borderRadius: "12px", height: "140px" }}
               />
             </div>
 
-            <h4>HAIR COLOUR</h4>
+            <h4 style={styles.heading}>HAIR COLOUR</h4>
             <ul style={styles.list}>
               <li style={styles.listItem}>Global Shoulder Length</li>
               <li style={styles.listItem}>Global Middle To Longhair</li>
@@ -259,12 +325,12 @@ const ContentMobile = () => {
             </ul>
             <div style={styles.imageContainer}>
               <img
-                src="/img/Rectangle 42.png"
+                src="/img/Services/hair cut.jpg"
                 alt=""
-                style={{ borderRadius: "12px", height: "200px" }}
+                style={{ borderRadius: "12px", height: "170px" }}
               />
             </div>
-            <h4>HAIR CUT</h4>
+            <h4 style={styles.heading}>HAIR CUT</h4>
             <ul style={styles.list}>
               <li style={styles.listItem}>Straight Hair Cut</li>
               <li style={styles.listItem}>U-Cut</li>
@@ -277,7 +343,6 @@ const ContentMobile = () => {
           </div>
         </div>
       </div>
-      {/* </center> */}
     </>
   );
 };

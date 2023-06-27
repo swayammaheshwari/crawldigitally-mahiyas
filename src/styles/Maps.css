@@ -15,6 +15,9 @@
     max-height: 70%;
     margin: 20px auto;
   }
+  #frame {
+    height: 200px !important;
+  }
 }
 
 /* Tablet View */
@@ -27,7 +30,8 @@
     padding: 0 50px;
   }
   .map-col {
-    margin: 0 0 20px 0;
-    padding: 0 50px;
+    margin: 0 0 35px 0;
+    padding: 0 30px;
+    border-radius: 12px;
   }
 }

@@ -3,9 +3,9 @@ import "../styles/About.css";
 
 const About = () => {
   return (
-    <section id="" class="about-us">
+    <section id="about" class="about-us">
       <div class="container">
-        <div class="row">
+        <div class="row justify-content-center">
           <div id="mobile-img" class="col-md-5">
             <img
               src="/img/aboutUs.png"
@@ -16,21 +16,28 @@ const About = () => {
           </div>
           <div class="col-md-6">
             <h2
-              style={{ color: "black", fontFamily: "Jost", fontWeight: "bold" }}
+              style={{
+                color: "black",
+                marginBottom: "10px",
+              }}
+              className="h1-responsive"
             >
               ABOUT US
             </h2>
-            <p>
-              Meet Pinky Hedau, the founder of The Nail Bar and Mahiyas Nail
-              Academy! With over a decade of experience in the nail art
-              industry, Pinky's passion for nail art has driven her to teach
-              over 1000+ students about nail art and share her expertise with
-              others. The Nail Bar offers a range of services, from manicures
-              and pedicures to gel extensions and nail art, while Mahiyas Nail
-              Academy provides a comprehensive curriculum that covers all
-              aspects of nail art. Whether you're looking for exceptional nail
-              services or to start a career in nail art, visit The Nail Bar or
-              enroll in Mahiyas Nail Academy today!
+            <p
+              class="about-us-p"
+              style={{ textAlign: "justify", fontFamily: "Poppins" }}
+            >
+              Mahiyaa's: The epitome of beauty services in Chhattisgarh since
+              2004. Led by owner Pinky Hedau, a seasoned expert with 20 years of
+              experience in the beauty industry and 6 years in nails.Pinky's
+              passion for nail art has driven her to teach over 1000+ students
+              about nail art and share her expertise with others. Discover our
+              two branches in Bilaspur City. First Mahiyaa's "The Beauty Salon"
+              offers a comprehensive range of services for skin, hair, nails,
+              and makeup. Second Mahiyaa's "The Nail Bar," indulges in the
+              artistry of permanent nail and eyelash extensions. Experience
+              beauty redefined at Mahiyaa's.
             </p>
           </div>
         </div>

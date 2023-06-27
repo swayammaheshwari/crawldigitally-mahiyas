@@ -1,11 +1,34 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 import "../styles/Contact.css";
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "YOUR_SERVICE_ID",
+        "YOUR_TEMPLATE_ID",
+        form.current,
+        "YOUR_PUBLIC_KEY"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
     <>
-      <div id="contact-us">
-        <div class="container">
+      <div id="contact">
+        <div class="container" style={{ paddingTop: "0" }}>
           <section class="mb-4 pt-3">
             <center id="svg-pin">
               <svg
@@ -21,7 +44,7 @@ const Contact = () => {
               </svg>
             </center>
             <h2
-              style={{ color: "black", fontFamily: "Jost", fontWeight: "bold" }}
+              style={{ marginBottom: "20px" }}
               class="h1-responsive text-center"
             >
               CONTACT US
@@ -31,14 +54,14 @@ const Contact = () => {
               <form
                 id="contact-form"
                 name="contact-form"
-                action="mail.php"
-                method="POST"
+                ref={form}
+                onSubmit={sendEmail}
               >
                 <div class="md-form custom-input">
                   <input
                     type="text"
-                    id="subject"
-                    name="subject"
+                    id="name"
+                    name="name"
                     class="form-control"
                     placeholder="Enter your Name"
                   />
@@ -67,18 +90,12 @@ const Contact = () => {
                   ></textarea>
                   <label for="message"></label>
                 </div>
+                <div class="text-center">
+                  <button id="button" class="btn" type="submit" value="Send">
+                    Send
+                  </button>
+                </div>
               </form>
-
-              <div class="text-center">
-                <a
-                  id="button"
-                  class="btn"
-                  onclick="document.getElementById('contact-form').submit();"
-                >
-                  Send
-                </a>
-              </div>
-              <div class="status"></div>
             </div>
           </section>
         </div>

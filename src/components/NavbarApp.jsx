@@ -23,11 +23,15 @@ const NavbarApp = () => {
         style={{ backgroundColor: "#ff8fab" }}
         expand="lg"
       >
-        <Container style={{ padding: "0px" }}>
+        <Container style={{ padding: "5px" }}>
           <Navbar.Brand href="/"></Navbar.Brand>
           <Navbar.Toggle
             aria-controls="basic-navbar-nav"
-            style={{ marginRight: "20px" }}
+            style={{
+              marginRight: "20px",
+              padding: "0px 5px",
+              boxShadow: "none",
+            }}
           />
           <Navbar.Collapse
             id="basic-navbar-nav"
@@ -41,7 +45,7 @@ const NavbarApp = () => {
                 HOME
               </Nav.Link>
               <Nav.Link
-                href="#about"
+                href="/#about"
                 style={{ color: "white", margin: "0 40px" }}
               >
                 ABOUT US
@@ -53,13 +57,13 @@ const NavbarApp = () => {
                 SERVICES
               </Nav.Link>
               <Nav.Link
-                href="#courses"
+                href="/course"
                 style={{ color: "white", margin: "0 40px" }}
               >
                 COURSES
               </Nav.Link>
               <Nav.Link
-                href="#contact"
+                href="/#contact"
                 style={{ color: "white", margin: "0 40px" }}
               >
                 CONTACT US

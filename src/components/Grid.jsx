@@ -22,23 +22,25 @@ const Grid = () => {
       <Row>
         <Col style={colStyle}>
           <img src="/img/Rectangle 39.png" height={"610rem"} alt="" />
-          <h3 style={{ position: "absolute", bottom: "0px" }}>
+          <h3 style={{ position: "absolute", bottom: "0px", color: "white" }}>
             NAIL EXTENSION
           </h3>
         </Col>
         <Col style={colStyle}>
           <img src="/img/Rectangle 42.png" height={"300rem"} alt="" />
-          <h3 style={{ position: "absolute", top: "260px" }}>NAIL EXTENSION</h3>
+          <h3 style={{ position: "absolute", top: "260px", color: "white" }}>
+            THERMO FACIAL
+          </h3>
           <hr style={{ margin: "5px" }} />
           <img src="/img/Rectangle 43.png" height={"300rem"} alt="" />
-          <h3 style={{ position: "absolute", bottom: "0px" }}>
-            NAIL EXTENSION
+          <h3 style={{ position: "absolute", bottom: "0px", color: "white" }}>
+            THERMOHERB
           </h3>
         </Col>
         <Col style={colStyle}>
           <img src="/img/Rectangle 44.png" height={"610rem"} alt="" />
-          <h3 style={{ position: "absolute", bottom: "0px" }}>
-            NAIL EXTENSION
+          <h3 style={{ position: "absolute", bottom: "0px", color: "white" }}>
+            TEMPORARY POLISH GLAM
           </h3>
         </Col>
       </Row>
@@ -52,8 +54,15 @@ const Grid = () => {
             }}
           >
             <img src="/img/Rectangle 41.png" height={"335rem"} alt="" />
-            <h3 style={{ position: "absolute", left: "200px", bottom: "0" }}>
-              NAIL EXTENSION
+            <h3
+              style={{
+                position: "absolute",
+                left: "200px",
+                bottom: "0",
+                color: "white",
+              }}
+            >
+              ERMANENT GEL POLISH
             </h3>
             <img
               src="/img/Rectangle 45.png"
@@ -61,8 +70,15 @@ const Grid = () => {
               style={{ paddingLeft: "10px" }}
               alt=""
             />
-            <h3 style={{ position: "absolute", right: "140px", bottom: "0" }}>
-              NAIL EXTENSION
+            <h3
+              style={{
+                position: "absolute",
+                right: "140px",
+                bottom: "0",
+                color: "white",
+              }}
+            >
+              GLITTER ART
             </h3>
           </Col>
           <Col style={colStyle}></Col>

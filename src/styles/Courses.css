@@ -11,8 +11,12 @@
   place-items: center;
   color: aliceblue;
 }
+.about-us {
+  background-color: #fff3f3;
+}
 
-@media (max-width: 768px) {
+/* Mobile View */
+@media only screen and (max-width: 767px) {
   .hr-line {
     display: none;
   }
@@ -37,5 +41,40 @@
 
   .course-content h6 {
     font-size: large;
+  }
+}
+
+/* Tablet View */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  #cards1 {
+    margin: 0 !important;
+    margin-right: 10px !important;
+    padding: 0 !important;
+    height: 300px !important;
+    width: 220px !important;
+  }
+  #cards2 {
+    margin: 0 !important;
+    margin-inline: 10px !important;
+    padding: 0 !important;
+    height: 290px !important;
+    width: 220px !important;
+  }
+  #cards3 {
+    margin: 0 !important;
+    margin-left: 10px !important;
+    padding: 0 !important;
+    height: 300px !important;
+    width: 220px !important;
+  }
+  .course-div {
+    margin-top: 50px;
+  }
+}
+
+/* Desktop View */
+@media only screen and (min-width: 1024px) {
+  .hr-mobile {
+    display: none;
   }
 }

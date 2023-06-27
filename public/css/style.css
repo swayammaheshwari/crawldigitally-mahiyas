@@ -1,8 +1,43 @@
 @import url("https://fonts.googleapis.com/css2?family=Jost:wght@300&family=Poppins&display=swap");
 
-* {
+/* Mobile View */
+@media only screen and (max-width: 767px) {
+  .container {
+    margin: 0px;
+    padding: 20px;
+  }
+  .owl-carousel .owl-stage-outer {
+    padding: 42px 0px 0px 25px;
+    height: 380px;
+  }
+
+  .h1-responsive {
+    font-size: 1.5rem;
+    color: #000000;
+    font-weight: 500;
+  }
+}
+
+/* Tablet View */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+}
+
+/* Desktop View */
+@media only screen and (min-width: 1024px) {
+  .h1-responsive {
+    color: #000000;
+    font-family: Jost;
+    font-size: 2rem;
+    font-weight: bolder !important;
+    line-height: 47px;
+    letter-spacing: 3px;
+    text-align: left;
+  }
+}
+
+body {
   font-family: "Poppins", sans-serif;
-  /* background-color: #fff3f3; */
+  background-color: #fff3f3 !important;
 }
 
 .jost {
@@ -158,11 +193,4 @@
 .owl-theme .owl-nav [class*="owl-"]:hover {
   border: 3px solid #1010ca;
   color: #1010ca !important;
-}
-
-@media (max-width: 575.5px) {
-  .container {
-    margin: 0px;
-    padding: 20px;
-  }
 }

@@ -34,6 +34,31 @@
 
 /* Tablet View */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .about-us {
+    padding: 60px 0;
+  }
+  .about-us p {
+    font-size: 18px;
+    font-weight: 300 !important;
+    line-height: 20px;
+    text-align: left;
+  }
+
+  #image {
+    height: 400px;
+    margin-top: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .about-us h2 {
+    font-family: Jost;
+    font-size: 35px;
+    font-weight: bolder;
+    line-height: 57px;
+    letter-spacing: 4px;
+    text-align: left;
+    margin-bottom: 0 !important;
+  }
 }
 
 /* Desktop View */
@@ -55,16 +80,11 @@
   }
 
   .about-us h2 {
-    /* font-weight: bold;
-    font-family: "Jost", sans-serif;
-    font-size: 36px;
-    margin-bottom: 30px;
-    margin-top: 20px; */
     font-family: Jost;
-    font-size: 40px;
-    font-weight: 500;
+    font-size: 35px;
+    font-weight: bolder;
     line-height: 57px;
-    letter-spacing: 4.5px;
+    letter-spacing: 4px;
     text-align: left;
   }
 }

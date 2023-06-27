@@ -1,8 +1,8 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom/client";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { App, ServicesApp } from "./App";
+import { App, CourseApp, ServicesApp } from "./App";
 
 const router = createBrowserRouter([
   {
@@ -13,10 +13,16 @@ const router = createBrowserRouter([
     path: "/Services",
     element: <ServicesApp />,
   },
+  {
+    path: "/Course",
+    element: <CourseApp />,
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <RouterProvider router={router}>
+      <Outlet /> {/* Placeholder for the matched route's component */}
+    </RouterProvider>
   </React.StrictMode>
 );
