@@ -51,12 +51,7 @@ const Contact = () => {
             </h2>
 
             <div class="mb-4">
-              <form
-                id="contact-form"
-                name="contact-form"
-                ref={form}
-                onSubmit={sendEmail}
-              >
+              <form action="https://wa.me/7724884259" method="GET">
                 <div class="md-form custom-input">
                   <input
                     type="text"
@@ -65,14 +60,14 @@ const Contact = () => {
                     class="form-control"
                     placeholder="Enter your Name"
                   />
-                  <label for="subject" class=""></label>
+                  <label for="name" class=""></label>
                 </div>
 
                 <div class="md-form custom-input">
                   <input
                     type="text"
                     id="subject"
-                    name="subject"
+                    name="email"
                     class="form-control"
                     placeholder="Enter A Valid Email Address"
                   />
@@ -81,7 +76,6 @@ const Contact = () => {
 
                 <div class="md-form custom-input">
                   <textarea
-                    type="text"
                     id="message"
                     name="message"
                     rows="2"

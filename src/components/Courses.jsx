@@ -39,7 +39,7 @@ const Courses = () => {
           >
             <a href="/course">
               <Card.Img
-                src="/img/nail-card.png"
+                src="/img/final-nail.png"
                 style={{
                   margin: "0",
                   padding: "0px",
@@ -50,15 +50,31 @@ const Courses = () => {
                   position: "relative",
                 }}
               />
-              {/* <div
-                className="course-content"
-                style={{ position: "absolute", top: "250px", left: "60px" }}
-              >
-                <img src="/img/Group 69.png" alt="" />
-                <h3 style={{ fontWeight: "bold" }}>Professional</h3>
-                <h6>Duration 10 Days</h6>
-                <h6>READ MORE</h6>
-              </div> */}
+            </a>
+          </Card>
+          <Card
+            className="mobile-view-only"
+            style={{
+              border: "none",
+              width: "18rem",
+              height: "25rem",
+              padding: "0",
+              margin: "40px",
+            }}
+          >
+            <a href="/course">
+              <Card.Img
+                src="/img/final-makeup.png"
+                style={{
+                  margin: "0",
+                  padding: "0px",
+                  cursor: "pointer",
+                  objectFit: "cover",
+                  height: "110%",
+                  width: "100%",
+                  position: "relative",
+                }}
+              />
             </a>
           </Card>
           <Card
@@ -74,7 +90,7 @@ const Courses = () => {
           >
             <a href="/course">
               <Card.Img
-                src="/img/skin-card.png"
+                src="/img/final-skin.png"
                 style={{
                   margin: "0",
                   padding: "0",
@@ -84,15 +100,6 @@ const Courses = () => {
                   position: "relative",
                 }}
               />
-              {/* <div
-                className="course-content"
-                style={{ position: "absolute", top: "250px", left: "60px" }}
-              >
-                <img src="/img/Group 70.png" alt="" />
-                <h3 style={{ fontWeight: "bold" }}>Advance</h3>
-                <h6>Duration 15 Days</h6>
-                <h6>READ MORE</h6>
-              </div> */}
             </a>
           </Card>
           <Card
@@ -108,7 +115,7 @@ const Courses = () => {
           >
             <a href="/course">
               <Card.Img
-                src="/img/hair-card.png"
+                src="/img/final-hair.png"
                 style={{
                   margin: "0",
                   padding: "0",
@@ -118,15 +125,6 @@ const Courses = () => {
                   position: "relative",
                 }}
               />
-              {/* <div
-                className="course-content"
-                style={{ position: "absolute", top: "250px", left: "60px" }}
-              >
-                <img src="/img/Group 71.png" alt="" />
-                <h3 style={{ fontWeight: "bold" }}>International</h3>
-                <h6>Duration 20 Days</h6>
-                <h6>READ MORE</h6>
-              </div> */}
             </a>
           </Card>
           <hr
