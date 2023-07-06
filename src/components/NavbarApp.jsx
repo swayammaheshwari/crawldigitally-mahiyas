@@ -3,6 +3,7 @@ import "../styles/Navbar.css";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import { Link } from "react-router-dom";
 
 const NavbarApp = () => {
   return (
@@ -50,18 +51,26 @@ const NavbarApp = () => {
               >
                 ABOUT US
               </Nav.Link>
-              <Nav.Link
-                href="/services"
-                style={{ color: "white", margin: "0 40px" }}
+              <Link
+                to="/services"
+                style={{
+                  color: "white",
+                  margin: "10px 40px",
+                  textDecoration: "none",
+                }}
               >
                 SERVICES
-              </Nav.Link>
-              <Nav.Link
-                href="/course"
-                style={{ color: "white", margin: "0 40px" }}
+              </Link>
+              <Link
+                to="/course"
+                style={{
+                  color: "white",
+                  margin: "10px 40px",
+                  textDecoration: "none",
+                }}
               >
                 COURSES
-              </Nav.Link>
+              </Link>
               <Nav.Link
                 href="/#contact"
                 style={{ color: "white", margin: "0 40px" }}
