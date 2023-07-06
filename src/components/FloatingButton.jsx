@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/floating.css";
+import "../styles/Floating.css";
 
 const FloatingButton = () => {
   return (
