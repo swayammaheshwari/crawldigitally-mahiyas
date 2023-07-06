@@ -4,14 +4,14 @@ import "../styles/floating.css";
 const FloatingButton = () => {
   return (
     <>
-      <div class="floating-instagram">
-        <div class="instagram-logo">
+      <div className="floating-instagram">
+        <div className="instagram-logo">
           <a href="https://www.instagram.com/mahiyaas_the_nail_bar_/">
             <img
               src="/img/instagram2.0.png"
               alt="Instagram Logo"
               height="200px"
-              class="instagram-logo"
+              className="instagram-logo"
             />
           </a>
         </div>
