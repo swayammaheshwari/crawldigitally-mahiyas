@@ -1,4 +1,3 @@
-import React from "react";
 import "../styles/Navbar.css";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
@@ -42,9 +41,16 @@ const NavbarApp = () => {
               className="me-auto"
               style={{ marginLeft: "auto", marginRight: "auto" }}
             >
-              <Nav.Link href="/" style={{ color: "white", margin: "0 40px" }}>
+              <Link
+                to="/"
+                style={{
+                  color: "white",
+                  margin: "10px 40px",
+                  textDecoration: "none",
+                }}
+              >
                 HOME
-              </Nav.Link>
+              </Link>
               <Nav.Link
                 href="/#about"
                 style={{ color: "white", margin: "0 40px" }}

@@ -1,42 +1,31 @@
-import React, { useRef } from "react";
-import emailjs from "@emailjs/browser";
 import "../styles/Contact.css";
 
 const Contact = () => {
-  const form = useRef();
-
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    emailjs
-      .sendForm(
-        "YOUR_SERVICE_ID",
-        "YOUR_TEMPLATE_ID",
-        form.current,
-        "YOUR_PUBLIC_KEY"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+  const handleFormSubmit = (event) => {
+    event.preventDefault();
+    const name = event.currentTarget.elements.namedItem("name").value;
+    const email = event.currentTarget.elements.namedItem("email").value;
+    const message = event.currentTarget.elements.namedItem("message").value;
+    const whatsappLink = `https://wa.me/7724884259?text=Name:%20${encodeURIComponent(
+      name
+    )}%0AEmail:%20${encodeURIComponent(
+      email
+    )}%0AMessage:%20${encodeURIComponent(message)}`;
+    window.location.href = whatsappLink;
   };
 
   return (
     <>
       <div id="contact">
-        <div class="container" style={{ paddingTop: "0" }}>
-          <section class="mb-4 pt-3">
+        <div className="container" style={{ paddingTop: "0" }}>
+          <section className="mb-4 pt-3">
             <center id="svg-pin">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="30"
                 height="30"
                 fill="currentColor"
-                class="bi bi-pin-angle-fill"
+                className="bi bi-pin-angle-fill"
                 viewBox="0 0 16 16"
                 color="#CE136C"
               >
@@ -45,47 +34,52 @@ const Contact = () => {
             </center>
             <h2
               style={{ marginBottom: "20px" }}
-              class="h1-responsive text-center"
+              className="h1-responsive text-center"
             >
               CONTACT US
             </h2>
 
-            <div class="mb-4">
-              <form action="https://wa.me/7724884259" method="GET">
-                <div class="md-form custom-input">
+            <div className="mb-4">
+              <form onSubmit={handleFormSubmit}>
+                <div className="md-form custom-input">
                   <input
                     type="text"
                     id="name"
                     name="name"
-                    class="form-control"
+                    className="form-control"
                     placeholder="Enter your Name"
                   />
-                  <label for="name" class=""></label>
+                  <label htmlFor="name" className=""></label>
                 </div>
 
-                <div class="md-form custom-input">
+                <div className="md-form custom-input">
                   <input
                     type="text"
                     id="subject"
                     name="email"
-                    class="form-control"
+                    className="form-control"
                     placeholder="Enter A Valid Email Address"
                   />
-                  <label for="subject" class=""></label>
+                  <label htmlFor="subject" className=""></label>
                 </div>
 
-                <div class="md-form custom-input">
+                <div className="md-form custom-input">
                   <textarea
                     id="message"
                     name="message"
                     rows="2"
-                    class="form-control md-textarea"
+                    className="form-control md-textarea"
                     placeholder="Enter Your message"
                   ></textarea>
-                  <label for="message"></label>
+                  <label htmlFor="message"></label>
                 </div>
-                <div class="text-center">
-                  <button id="button" class="btn" type="submit" value="Send">
+                <div className="text-center">
+                  <button
+                    id="button"
+                    className="btn"
+                    type="submit"
+                    value="Send"
+                  >
                     Send
                   </button>
                 </div>
