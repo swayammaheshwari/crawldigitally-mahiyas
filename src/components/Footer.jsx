@@ -1,4 +1,3 @@
-import React from "react";
 import { FaFacebookF, FaInstagram, FaWhatsapp } from "react-icons/fa";
 
 const Footer = () => {
@@ -9,7 +8,7 @@ const Footer = () => {
           <a
             className="btn text-white btn-floating m-1"
             style={{ backgroundColor: "#3b5998" }}
-            href="#!"
+            href="https://www.facebook.com/mahiyaasthenailbar/"
             role="button"
           >
             <FaFacebookF />
@@ -18,7 +17,7 @@ const Footer = () => {
           <a
             className="btn text-white btn-floating m-1"
             style={{ backgroundColor: "#ac2bac" }}
-            href="#!"
+            href="https://www.instagram.com/mahiyaas_the_nail_bar_/"
             role="button"
           >
             <FaInstagram />
@@ -27,7 +26,7 @@ const Footer = () => {
           <a
             className="btn text-white btn-floating m-1"
             style={{ backgroundColor: "#25d366" }}
-            href="#!"
+            href="https://api.whatsapp.com/send/?phone=%2B918319276771"
             role="button"
           >
             <FaWhatsapp />
