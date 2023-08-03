@@ -6,7 +6,7 @@ const Contact = () => {
     const name = event.currentTarget.elements.namedItem("name").value;
     const email = event.currentTarget.elements.namedItem("email").value;
     const message = event.currentTarget.elements.namedItem("message").value;
-    const whatsappLink = `https://wa.me/8319276771?text=Name:%20${encodeURIComponent(
+    const whatsappLink = `https://wa.me/+918319276771?text=Name:%20${encodeURIComponent(
       name
     )}%0AEmail:%20${encodeURIComponent(
       email
