@@ -1,5 +1,5 @@
-import React from "react";
 import Card from "react-bootstrap/Card";
+import { Link } from "react-router-dom";
 import "../styles/Courses.css";
 import HR from "./HR";
 
@@ -17,7 +17,7 @@ const Services = () => {
             />
             <h2 className="text-center h1-responsive">OUR POPULAR SERVICES</h2>
           </center>
-          <div class="d-flex flex-wrap justify-content-center">
+          <div className="d-flex flex-wrap justify-content-center">
             <Card
               id="cards1"
               style={{
@@ -28,7 +28,7 @@ const Services = () => {
                 border: "none",
               }}
             >
-              <a href="/services">
+              <Link to="/services">
                 <Card.Img
                   src="/img/service 1.jpg"
                   style={{
@@ -36,7 +36,7 @@ const Services = () => {
                     height: "100%",
                   }}
                 />
-              </a>
+              </Link>
             </Card>
             <HR top={"250px"} />
             <Card
@@ -49,7 +49,7 @@ const Services = () => {
                 border: "none",
               }}
             >
-              <a href="/services">
+              <Link to="/services">
                 <Card.Img
                   src="/img/service 2.jpg"
                   style={{
@@ -57,7 +57,7 @@ const Services = () => {
                     height: "100%",
                   }}
                 />
-              </a>
+              </Link>
             </Card>
             <HR top={"730px"} />
 
@@ -71,7 +71,7 @@ const Services = () => {
                 border: "none",
               }}
             >
-              <a href="/services">
+              <Link to="/services">
                 <Card.Img
                   src="/img/service 3.jpg"
                   style={{
@@ -79,7 +79,7 @@ const Services = () => {
                     height: "100%",
                   }}
                 />
-              </a>
+              </Link>
             </Card>
             <HR bottom={"90px"} />
             <hr

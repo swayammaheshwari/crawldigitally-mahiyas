@@ -1,4 +1,4 @@
-import React from "react";
+import { Link } from "react-router-dom";
 import Card from "react-bootstrap/Card";
 import "../styles/Courses.css";
 import { GiGraduateCap } from "react-icons/gi";
@@ -26,7 +26,7 @@ const Courses = () => {
           />
         </div>
         <h2 className="text-center h1-responsive">OUR COURSES</h2>
-        <div class="d-flex flex-wrap justify-content-center">
+        <div className="d-flex flex-wrap justify-content-center">
           <Card
             id="cards1"
             style={{
@@ -37,7 +37,7 @@ const Courses = () => {
               margin: "40px",
             }}
           >
-            <a href="/course">
+            <Link to="/course">
               <Card.Img
                 src="/img/final-nail.png"
                 style={{
@@ -50,7 +50,7 @@ const Courses = () => {
                   position: "relative",
                 }}
               />
-            </a>
+            </Link>
           </Card>
           <Card
             className="mobile-view-only"
@@ -62,7 +62,7 @@ const Courses = () => {
               margin: "40px",
             }}
           >
-            <a href="/course">
+            <Link to="/course">
               <Card.Img
                 src="/img/final-makeup.png"
                 style={{
@@ -75,7 +75,7 @@ const Courses = () => {
                   position: "relative",
                 }}
               />
-            </a>
+            </Link>
           </Card>
           <Card
             id="cards2"
@@ -88,7 +88,7 @@ const Courses = () => {
               margin: "40px",
             }}
           >
-            <a href="/course">
+            <Link to="/course">
               <Card.Img
                 src="/img/final-skin.png"
                 style={{
@@ -100,7 +100,7 @@ const Courses = () => {
                   position: "relative",
                 }}
               />
-            </a>
+            </Link>
           </Card>
           <Card
             id="cards3"
@@ -113,7 +113,7 @@ const Courses = () => {
               margin: "40px",
             }}
           >
-            <a href="/course">
+            <Link to="/course">
               <Card.Img
                 src="/img/final-hair.png"
                 style={{
@@ -125,7 +125,7 @@ const Courses = () => {
                   position: "relative",
                 }}
               />
-            </a>
+            </Link>
           </Card>
           <hr
             className="hr-line"

@@ -1,4 +1,3 @@
-import React from "react";
 import { ImLocation2 } from "react-icons/im";
 import "../styles/Maps.css";
 import { Container, Row, Col } from "react-bootstrap";
